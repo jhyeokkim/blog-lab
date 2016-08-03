@@ -1,3 +1,3 @@
 # blog
-
-http://kimhjh.github.io/blog/
+블로그
+ 

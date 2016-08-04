@@ -4,20 +4,30 @@ layout: default
 
 <div class="home">
 
+  <!-- ref. https://gist.github.com/nimbupani/1421828 -->
+  <div class="lastes-post">
+    {% assign post = site.posts.first %}
+    {% assign content = post.content %}
+    {% if page.title %}
+      <a href="{{ root_url }}/blog/{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+    {% if post.title %}
+      <a href="{{ root_url }}/blog/{{ post.url }}">{{ post.title }}</a>
+    {% endif %}
+    <div class="entry-content">{{ content }}</div>
+  </div>
+
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span class="post-meta">({{ post.date | date: "%Y-%m-%d" }})</span>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/blog/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

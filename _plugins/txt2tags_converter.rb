@@ -25,8 +25,9 @@ module Jekyll
 			# Note: added a leading blank line to mean "Empty Headers".
 			#       http://txt2tags.org/userguide/HeaderArea.html
 
-			temp_file = '/tmp/jekyll.t2t'
-            #temp_file = 'C:/Temp/jekyll.t2t'
+            temp_file = (RUBY_PLATFORM =~ /cygwin|mswin|mingw/) \
+                ? 'C:/Temp/jekyll.t2t' \
+                : '/tmp/jekyll.t2t'
 			File.open(temp_file, 'w') { |f| f.write("\n" + content) }
 
 			# Customize the txt2tags command line options as you wish.

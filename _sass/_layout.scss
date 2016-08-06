@@ -205,6 +205,23 @@
     margin-bottom: 1em;
 }
 
+//
+// microblogging
+//
+.microblogging ul {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.microblogging li {
+    border-radius: 5px;
+    border: 1px solid #e1e8ed;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
 
 /**
  * Posts

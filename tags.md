@@ -4,8 +4,8 @@ title: Tag
 permalink: /tag/
 ---
 <!-- ref.
-* https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html
 * http://stackoverflow.com/a/18221512
+* https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html
 -->
 {% assign sorted_tags = site.tags | sort %}
 <div class="list-of-tag">

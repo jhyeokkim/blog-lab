@@ -1,3 +1,5 @@
-{% for tag in site.tags %}
-<a class="post-tag" href="{{ root_url }}/blog/tag#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
-{% endfor %}
+<div class="post-tags">
+    {% for tag in site.tags %}
+        <a href="{{ root_url }}/blog/tag#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+    {% endfor %}
+</div>

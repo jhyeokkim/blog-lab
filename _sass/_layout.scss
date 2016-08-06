@@ -194,6 +194,16 @@
     //font-size: 24px;
 }
 
+.post-lastes {
+    display: block;
+}
+
+.post-tag-hr {
+    border: 0;
+    //border-bottom: 1px dashed #ccc;
+    height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-bottom: 1em;
+}
 
 
 /**

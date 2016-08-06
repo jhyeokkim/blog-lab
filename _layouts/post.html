@@ -9,7 +9,7 @@ layout: default
     <!-- tags -->
     <div class="post-tags">
       {% for tag in page.tags %}
-        <a href="{{ root_url }}/blog/tag#{{ tag | slugify }}">{{ tag }}</a>
+        <a class="post-tag" href="{{ root_url }}/blog/tag#{{ tag | slugify }}">{{ tag }}</a>
       {% endfor %}
     </div>
   </header>

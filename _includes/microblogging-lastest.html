@@ -3,10 +3,10 @@
     {% assign post = site.tags['microblogging'].first %}
     {% assign content = post.content %}
     {% if page.title %}
-        <a href="{{ root_url }}/blog/{{ page.url }}">{{ page.title }}</a>
+        <a href="{{ root_url }}/blog-lab/{{ page.url }}">{{ page.title }}</a>
     {% endif %}
     {% if post.title %}
-        <a href="{{ root_url }}/blog/{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ root_url }}/blog-lab/{{ post.url }}">{{ post.title }}</a>
     {% endif %}
     <div class="entry-content">{{ content }}</div>
 </div>

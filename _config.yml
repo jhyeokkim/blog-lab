@@ -10,7 +10,7 @@ title: 톱니바퀴
 email: tmp1d@naver.com
 description: > # this means to ignore newlines until "baseurl:"
     코드 생산 中
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/blog-lab" # the subpath of your site, e.g. /blog
 url: #"http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: # jekyllrb
 github_username:  kimhjh    # kekyll
